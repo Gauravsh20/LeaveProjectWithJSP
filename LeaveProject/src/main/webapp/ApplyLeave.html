@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Apply Leave</title>
+</head>
+<style>
+
+header h1 {
+  font-size: 50px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #808080, #DCDCDC);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-color: black;
+}
+input, select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 10%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+</style>
+<body>
+<Center>
+<header>
+        <h1>Leave Apply</h1>
+    </header>  
+</Center>
+<form method="get" action="LeaveApply.jsp">
+		<center >
+			Employ Id : 
+			<input type="number" class="" name="empId" /> <br/><br/> 
+			Leave Start Date : 
+			<input type="date" name="leaveStartDate" /> <br/><br/> 
+			Leave End Date : 
+			<input type="date" name="leaveEndDate" /> <br/><br/>
+			Leave Reason :
+			<input type="text" name="leaveReason" /> <br/><br/>
+			<input type="submit" class="" value="Apply Leave" />
+		</center>
+	</form>
+</body>
+</html>
